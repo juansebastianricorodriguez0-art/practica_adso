@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion inventario adso</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body class="login-fondo">
+
+    <main class="login-car">
+        <i class="bi bi-shop display-4 texto-sena"></i>
+
+        <header class="login-encabezado">
+            <h1 class="h3 fw-bold">inventario sena</h1>
+            <p> ingresa credenciales </p>
+
+
+        </header>
+        <div action="dashboard.html" method="get"> <!--  form permite crear el contenido de 
+        un formulario cuando se envia nos lleva a la ruta (dashboard) el metod nos envia a la informacion con get -->
+
+            <!-- agrupar contenido-->
+            <div class="form-floating mb-3">
+
+                <input type="password" class="form-control" id="clave" placeholder="minimo 6 caracteres" minlength="6"
+                    required>
+                <!-- type password oculta lo que escribes minlegth
+        exige al menos 6 caracteres-->
+                <label for="clave"> contraseña</label>
+            </div>
+            <br>
+            <div class="form-check-input" type="checkbox">
+                <input type="email" class="form-control" id="correo" placeholder="sena@correo.com"
+                    required><!--type obliga que tenga ela arroba -->
+                <label for="correo"><i class="bi bi-envelope me-1"></i></label>
+                <input type="checkboox" id="recordar">
+                <label for="recordar">Recordarme </label>
+                <!--Checkbox verificacion-->
+                <label class="form-check-label"></label>
+
+
+                <a href="" class="small text-decoration-none"> olvidaste la contraseña</a>
+            </div>
+            <button type="submit" class="btm btm-sena w100 py-2 fw-semibold">
+                <i class="bi bi-box-arrow-in-right me-1"></i>ingresar
+            </button>
+            <!--envia el formulario antes revisa los campos required email y minleg-->
+
+
+            </form>
+            <p class="login-pie"> ¿No tienes cuenta? <a href="registro.html" class="text-decoration-none">  Registrate</a></p>
+
+            <!--pie de pagina-->
+            <footer> 2026 sena ADSO MIXTO <!--pie de pagina--> </footer>
+    </main>
+
+
+
+</body>
+
+</html>
